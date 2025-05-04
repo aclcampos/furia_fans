@@ -4,6 +4,7 @@ import spacy
 import requests
 
 # Carregar modelo NLP
+spacy.cli.download("pt_core_news_md")
 nlp = spacy.load("pt_core_news_md")
 
 # Função de validação de conteúdo online
